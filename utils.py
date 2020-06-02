@@ -154,7 +154,6 @@ def model_gridsearch(ts,p_min,d_min,q_min,p_max,d_max,q_max,sP_min,sD_min,sQ_min
                 model_results = model.fit()
 
             ###########################################
-            # whats loglikelihood burn?
             pred_begin = ts_train.index[sarima_fit.loglikelihood_burn]
             pred_end = ts_test.index[-1]
             
